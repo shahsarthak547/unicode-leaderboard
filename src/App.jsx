@@ -1,6 +1,7 @@
 import React from "react"; 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Leaderboard from "./components/Leaderboard.jsx";
+import Home from "./components/home.jsx";
 import './index.css';
 import './App.css';
 const App = () => {
