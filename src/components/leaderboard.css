@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* Leaderboard.css */
 body {
   font-family: 'Inter', sans-serif;
