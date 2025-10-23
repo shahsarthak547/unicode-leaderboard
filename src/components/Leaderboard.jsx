@@ -67,14 +67,6 @@ export default function Leaderboard() {
           onChange={e => setSearch(e.target.value)}
         />
       </div>
-      <div className="flex justify-end mb-4">
-        <button 
-        onClick={fetchData}
-        className="px-4 py-2 bg-indigo-600 text-white rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-200"
-        >
-        🔄 Refresh Now
-        </button>
-      </div>
       <div className="w-full max-w-2xl flex flex-col gap-4 bg-white shadow-xl rounded-xl p-6">
         <div className="flex font-semibold text-indigo-700 text-lg border-b pb-3 mb-3">
           <div className="flex-1">Player</div>
