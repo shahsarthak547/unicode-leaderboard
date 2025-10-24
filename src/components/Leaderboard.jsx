@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
+import bgImage from "./image.jpg";
 export default function Leaderboard() {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState("");
   const [lastUpdated, setLastUpdated] = useState(null);
-
   const spreadsheetId = "1pAc8AlCdPFduk1cblYitu9fz3eg8_05OfFsQg2GF48I";
   const apiUrl = `https://opensheet.elk.sh/${spreadsheetId}/Sheet1`;
-
   const fetchData = async () => {
     try {
       const res = await fetch(apiUrl);
@@ -44,7 +43,12 @@ export default function Leaderboard() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-indigo-100 via-white to-indigo-50 flex flex-col items-center px-4 py-10">
+    <div className="min-h-screen bg-gradient-to-b from-indigo-100 via-white to-indigo-50 flex flex-col items-center px-4 py-10"
+      style={{
+        backgroundImage : `url(${bgImage})`,
+        backgroundSize : "cover",
+        backgroundPosition : "center",
+      }}>
       <div className="sticky top-0 bg-white/80 backdrop-blur-sm w-full max-w-2xl rounded-xl shadow-md mb-8 p-4 flex flex-col sm:flex-row items-center justify-between">
         <div className="flex items-center gap-3">
           <span className="text-4xl">🏆</span>

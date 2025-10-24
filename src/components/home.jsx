@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
-
+import bgImage2 from "./image2.jpg";
 const Home = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-gray-900 via-slate-800 to-black text-gray-100">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-gray-900 via-slate-800 to-black text-gray-100"
+      style={{
+        backgroundImage : `url(${bgImage2})`,
+        backgroundSize : "cover",
+        backgroundPosition : "center",
+      }}>
       <div className="text-center space-y-8">
-        <h1 className="text-5xl sm:text-6xl font-bold text-teal-400 drop-shadow-md animate-bounce">
+        <h1 className="text-5xl sm:text-6xl font-bold text-yellow-400 drop-shadow-md animate-bounce">
           Welcome!!
         </h1>
         <p className="text-gray-300 text-xl sm:text-2xl tracking-wide">
